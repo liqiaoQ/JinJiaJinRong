@@ -1,0 +1,97 @@
+/*================================================
+ * @author:		@IMzhengfei
+ * @update:		2016.01.25
+ * @homepage:	http://www.imzhengfei.com
+ *===============================================*/
+
+@charset "utf-8";
+
+/*================================================
+ * VW-slide
+ *===============================================*/
+.VW-slide>ul, .VW-slide>ul>li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.VW-slide {
+	position: relative;
+	overflow: hidden;
+}
+.VW-slide>ul.VW-slide-tab {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.VW-slide>ul.VW-slide-tab>li {
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+a.VW-slide-switch-left,
+a.VW-slide-switch-right {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	width: 25px;
+	height: 50px;
+	outline: 0 none;
+	-webkit-opacity: 0.6;
+	   -moz-opacity: 0.6;
+			opacity: 0.6;
+	filter: alpha(opacity=60);
+	-webkit-transition: opacity 0.2s ease-out;
+	   -moz-transition: opacity 0.2s ease-out;
+		-ms-transition: opacity 0.2s ease-out;
+			transition: opacity 0.2s ease-out;
+}
+a.VW-slide-switch-left {
+	left: 5%;
+	background: url(images/VW-slide-navigation-left.png) no-repeat;
+}
+a.VW-slide-switch-right {
+	right: 5%;
+	background: url(images/VW-slide-navigation-right.png) no-repeat;
+}
+a.VW-slide-switch-left:hover,
+a.VW-slide-switch-right:hover {
+	-webkit-opacity: 1;
+	   -moz-opacity: 1;
+			opacity: 1;
+	filter: alpha(opacity=100);
+}
+ul.VW-slide-navigation {
+	position: absolute;
+	left: 50%;
+	top: 95%;
+	width: auto;
+	height: 10px;
+	overflow: visible;
+}
+ul.VW-slide-navigation>li {
+	position: relative;
+	float: left;
+	right: 50%;
+	margin-right: 20px;
+	border: 1px solid #ECF0F1;
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+			border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: background-color 0.2s ease-out;
+	   -moz-transition: background-color 0.2s ease-out;
+		-ms-transition: background-color 0.2s ease-out;
+			transition: background-color 0.2s ease-out;
+}
+ul.VW-slide-navigation>li.active,
+ul.VW-slide-navigation>li:hover {
+	background: #ECF0F1;
+}

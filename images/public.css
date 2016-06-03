@@ -1,0 +1,45 @@
+/*右侧浮动菜单*/
+#zf-float-menu {
+	position: fixed;
+	z-index: 8000;
+	top: 50%;
+	margin-top: -90px;
+	right: 20px;
+}
+#zf-float-menu li {
+	position: relative;
+	height: 60px;
+	width: 60px;
+	margin-bottom: 2px;
+	background-color: #999999;
+	background-repeat: no-repeat;
+	background-position: -6px -6px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+#zf-float-menu li.zf-float-qq { background-image: url(../images/r_qq.png);}
+#zf-float-menu li.zf-float-wx { background-image: url(../images/r_wx.png);}
+#zf-float-menu li.zf-float-help { background-image: url(../images/r_help.png);}
+#zf-float-menu li.zf-float-gotop {
+	height: 0;
+	background-image: url(../images/r_top.png);
+}
+#zf-float-menu li.zf-float-help a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#zf-float-menu li.zf-float-qq:hover { background-color: #3498db;}
+#zf-float-menu li.zf-float-wx:hover { background-color: #27ae60;}
+#zf-float-menu li.zf-float-help:hover { background-color: #e67e22;}
+#zf-float-menu li.zf-float-gotop:hover { background-color: #34495e;}
+
+li.zf-float-wx img {
+	display: none;
+	position: absolute;
+	top: -30px;
+	right: 60px;
+	height: 120px;
+	width: 120px;
+}

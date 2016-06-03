@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+/************************************
+	用于向低版本用户提示使用高版本浏览器
+*************************************/
+#mask
+{
+	position:fixed;
+	width:120%;
+	height:120%;
+	top:-10%;
+	left:-10%;
+	background-image:url(../images/mask.png);
+	visibility:visible;
+	z-index:1000;	
+}
+#lowVersionHexgon
+{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:520px;
+	height:300px;
+	margin-left:-260px;
+	margin-top:-150px;
+	text-align:center;
+	background-color:#ADFF2F;
+	visibility:visible;
+	z-index:1001;	
+}
+
+
+#lowVersionHexgon:before,#lowVersionHexgon before
+{
+	content:'';
+	position:absolute;
+	border-top:150px solid transparent;
+	border-bottom:150px solid #ADFF2F;
+	border-left:260px solid transparent;
+	border-right:260px solid transparent;
+	left:0px;
+	top:-300px;
+	width:0px;
+	height:0px;
+	display:block;
+}
+
+#lowVersionHexgon:after,#lowVersionHexgon after
+{
+	content:'';
+	position:absolute;
+	border-top:150px solid #ADFF2F;
+	border-bottom:150px solid transparent;
+	border-left:260px solid transparent;
+	border-right:260px solid transparent;
+	left:0px;
+	top:300px;
+	width:0px;
+	height:0px;
+	display:block;
+}
+
+#lowVersionHexgon h2
+{
+	position:relative;
+	width:520px;
+	height:30px;
+	font-size:20px;
+	line-height:30px;	
+}
+
+#lowVersionHexgon p
+{
+	position:relative;
+	width:480px;
+	margin-left:20px;
+	line-height:30px;	
+}
+#closePop
+{
+	position:absolute;
+	left:260px;
+	top:280px;
+	background-color:#dddddd;
+	line-height:30px;
+	margin-left:-50px;
+	width:100px;
+	height:40px;
+	border:none;
+	z-index:2000;
+	cursor:pointer;
+}
